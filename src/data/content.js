@@ -1,97 +1,123 @@
 export const HOME_NAV_ITEMS = [
-  { href: '#projects', index: '01', label: 'Work' },
-  { href: '#skills', index: '02', label: 'Skills' },
-  { href: '#journey', index: '03', label: 'Journey' },
-  { href: '#certifications', index: '04', label: 'Certificates' },
-  { href: '#contact', index: '05', label: 'Contact' },
+  { href: '#projects', label: 'Projects' },
+  { href: '#skills', label: 'Skills' },
+  { href: '#contact', label: 'Contact' },
 ];
 
-export const ACADEMIC_PROFILE = {
-  program: 'B.Tech ECE',
-  collegeShort: 'MAIT',
-  admissionYear: 2024,
-  graduationYear: 2028,
-  firstSemesterStartMonth: 7,
-  totalSemesters: 8,
+export const SOCIAL_LINKS = {
+  github: 'https://github.com/yogesh001-gif',
+  linkedin: 'https://www.linkedin.com/in/yogeshahlawat/',
+  email: 'mailto:yogeshahlawat@example.com',
+  resume: '#',
 };
 
 export const TYPEWRITER_WORDS = [
-  'Software Engineer',
-  'Web Developer',
+  'Full-Stack Developer',
+  'Embedded Systems Engineer',
   'Problem Solver',
-  'Tech Enthusiast',
-  'Creative Thinker',
-];
-
-export const SKILLS = [
-  {
-    icon: 'fas fa-code',
-    title: 'Programming',
-    description: 'C, C++, JavaScript',
-  },
-  {
-    icon: 'fas fa-robot',
-    title: 'AI & GenAI',
-    description: 'Artificial Intelligence, ChatGPT, Prompt Engineering',
-  },
-  {
-    icon: 'fas fa-laptop-code',
-    title: 'Development',
-    description: 'HTML, CSS, Responsive Design',
-  },
-  {
-    icon: 'fas fa-tools',
-    title: 'Tools & Skills',
-    description: 'VS Code, Git, Communication, Engineering Graphics',
-  },
+  'Creative Builder',
 ];
 
 export const PROJECTS = [
   {
-    title: 'AI Personal Finance & Investment Advisor',
+    title: 'AI Personal Finance Advisor',
     year: '2025',
+    category: 'web',
     description:
-      'A comprehensive web application that acts as your personal finance coach, powered by AI to provide intelligent financial recommendations.',
+      'A comprehensive AI-powered web application that acts as your personal finance coach — tracking transactions, optimizing budgets, and providing intelligent investment recommendations.',
     features: [
-      'Transaction Tracking - Add and categorize income and expenses with visual dashboard',
-      'AI-Powered Advice - Personalized financial analysis and budget optimization suggestions',
-      'Investment Suggestions - AI-driven recommendations based on financial capacity',
-      'Tax Optimization - Strategies to minimize tax burden and improve savings rate',
-      'Data Visualizations - Income vs Expenses charts, category-wise breakdowns, spending patterns',
+      'AI-Powered financial analysis & budget optimization',
+      'Investment suggestions based on capacity',
+      'Income vs Expenses charts & spending pattern visualizations',
+      'Tax optimization strategies',
     ],
     tech: ['Node.js', 'MongoDB', 'Chart.js', 'AI/API', 'JavaScript'],
-    link: 'https://github.com/yogesh001-gif/ai-finance-advisor',
+    github: 'https://github.com/yogesh001-gif/ai-finance-advisor',
+    live: null,
   },
   {
-    title: 'AWS x MAIT',
+    title: 'Khushi Fashion',
     year: '2025',
+    category: 'web',
     description:
-      'A modern, responsive website showcasing the strategic collaboration between Amazon Web Services (AWS) and Maharaja Agrasen Institute of Technology (MAIT), Delhi - empowering students with cloud-first learning, innovation, and industry-ready skills.',
+      'A modern e-commerce platform for a fashion brand with seamless product browsing, cart management, and a polished shopping experience.',
     features: [
-      'Official Digital Platform - Serves as the hub for the AWS & MAIT partnership initiatives',
-      'AWS Academy Integration - Highlights cloud curriculum and certification pathways for students',
-      'AWS Educate Programs - Showcases hands-on learning resources and cloud labs',
-      'Industry-Ready Skills - Prepares MAIT students as cloud-ready professionals',
-      'Responsive Design - Modern UI with seamless navigation across all devices',
+      'Responsive product catalog with filters',
+      'Shopping cart & checkout flow',
+      'Modern UI with smooth animations',
+      'Mobile-first responsive design',
     ],
-    tech: ['HTML5', 'CSS3', 'JavaScript', 'AWS', 'Responsive Design'],
-    link: 'https://aws-mait.netlify.app',
+    tech: ['React', 'Node.js', 'Tailwind CSS', 'JavaScript'],
+    github: 'https://github.com/yogesh001-gif',
+    live: null,
+  },
+  {
+    title: 'Buskiबात',
+    year: '2025',
+    category: 'web',
+    description:
+      'A real-time chat and social platform connecting communities through instant messaging, rich media sharing, and interactive discussions.',
+    features: [
+      'Real-time messaging with WebSockets',
+      'Rich media sharing & previews',
+      'Community channels & discussions',
+      'Responsive mobile-friendly interface',
+    ],
+    tech: ['React', 'Spring Boot', 'WebSocket', 'JavaScript'],
+    github: 'https://github.com/yogesh001-gif',
+    live: null,
+  },
+  {
+    title: 'AWS × MAIT',
+    year: '2025',
+    category: 'web',
+    description:
+      'The official digital platform for the AWS & MAIT partnership — showcasing cloud curriculum, AWS Academy integration, and industry-ready skill pathways for students.',
+    features: [
+      'AWS Academy & Educate program showcase',
+      'Cloud certification pathways',
+      'Responsive modern design',
+      'Student resource hub',
+    ],
+    tech: ['HTML5', 'CSS3', 'JavaScript', 'AWS'],
+    github: null,
+    live: 'https://aws-mait.netlify.app',
+  },
+  {
+    title: 'TrafficX — Smart Traffic System',
+    year: '2025',
+    category: 'hardware',
+    description:
+      'An IoT-powered intelligent traffic management system using ESP32 and HC-SR04 ultrasonic sensors for real-time vehicle density detection and adaptive signal control.',
+    features: [
+      'ESP32-based sensor network',
+      'HC-SR04 ultrasonic vehicle detection',
+      'Adaptive traffic signal timing',
+      'Real-time density monitoring dashboard',
+    ],
+    tech: ['C++', 'ESP32', 'HC-SR04', 'IoT', 'Arduino'],
+    github: 'https://github.com/yogesh001-gif',
+    live: null,
   },
 ];
 
-export const EDUCATION = [
-  {
-    title: 'B.Tech in ECE',
-    date: '2024 - 2028',
-    location: 'Maharaja Agrasen Institute of Technology (MAIT)',
-    description: 'Currently in 2nd Year, 4th Semester',
-  },
-  {
-    title: 'Class 12th - Science (PCM)',
-    date: '2023',
-    location: 'New Pragati Senior Secondary School, Jind',
-    description: 'Physics, Chemistry, Mathematics',
-  },
+export const TECH_STACK = [
+  { name: 'C++', category: 'Languages', color: '#00599C' },
+  { name: 'C', category: 'Languages', color: '#A8B9CC' },
+  { name: 'Java', category: 'Languages', color: '#ED8B00' },
+  { name: 'JavaScript', category: 'Languages', color: '#F7DF1E' },
+  { name: 'Python', category: 'Languages', color: '#3776AB' },
+  { name: 'React', category: 'Frontend', color: '#61DAFB' },
+  { name: 'Tailwind', category: 'Frontend', color: '#06B6D4' },
+  { name: 'HTML5', category: 'Frontend', color: '#E34F26' },
+  { name: 'CSS3', category: 'Frontend', color: '#1572B6' },
+  { name: 'Node.js', category: 'Backend', color: '#339933' },
+  { name: 'Spring Boot', category: 'Backend', color: '#6DB33F' },
+  { name: 'MongoDB', category: 'Backend', color: '#47A248' },
+  { name: 'Git', category: 'Tools', color: '#F05032' },
+  { name: 'VS Code', category: 'Tools', color: '#007ACC' },
+  { name: 'Arduino', category: 'Hardware', color: '#00979D' },
+  { name: 'ESP32', category: 'Hardware', color: '#E7352C' },
 ];
 
 export const CERTIFICATIONS = [
@@ -144,14 +170,6 @@ export const CERTIFICATIONS = [
     file: '/certificates-pic/CertificateOfCompletion_Streamlining Your Work with Microsoft Copilot.pdf',
   },
   {
-    icon: 'fas fa-award',
-    title: 'Certificate of Participation',
-    issuer: 'Professional Development',
-    year: '2025',
-    badge: 'Participation',
-    file: '/certificates-pic/Certification_Of_Participation.png',
-  },
-  {
     icon: 'fab fa-cuttlefish',
     title: 'C++ Programming',
     issuer: 'Programming Certificate',
@@ -169,17 +187,10 @@ export const CERTIFICATIONS = [
   },
   {
     icon: 'fas fa-code',
-    title: 'Programming in HTML5 with JavaScript and CSS3',
+    title: 'Programming in HTML5 with JS & CSS3',
     issuer: 'Web Development',
     year: '2025',
     badge: 'Web Dev',
     file: '/certificates-pic/PrograminginHTML5withJAVAscriptandCSS3.png',
   },
-];
-
-export const INTERESTS = [
-  { icon: 'fas fa-laptop-code', label: 'Software Engineering' },
-  { icon: 'fas fa-robot', label: 'AI Applications' },
-  { icon: 'fas fa-graduation-cap', label: 'Learning' },
-  { icon: 'fas fa-eye', label: 'Computer Vision' },
 ];
